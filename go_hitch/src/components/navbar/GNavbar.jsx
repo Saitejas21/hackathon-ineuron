@@ -1,5 +1,5 @@
 import React from "react";
-import "./GNavbar.css";
+import './GNavbar.css'
 
 function GNavbar() {
   return (

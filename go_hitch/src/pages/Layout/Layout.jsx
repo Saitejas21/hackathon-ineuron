@@ -19,7 +19,7 @@ const Layout = () => {
 
       <Outlet />
 
-      <p>footer</p>
+      
     </>
   );
 };

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const theme = createTheme({
   type: "dark", // it could be "light" or "dark"
