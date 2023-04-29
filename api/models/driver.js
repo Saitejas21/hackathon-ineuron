@@ -40,5 +40,22 @@ driverSchema.statics.updateLocation = async function(id, location) {
     return driver;
   }
 
+  function findAvailableDrivers(startLocation) {
+    const maxDistance = 10; // km
+    return Driver.find({
+      available: true,
+      location: {
+        $near: {
+          $geometry: {
+            type: 'Point',
+            coordinates: [startLocation.coordinates[0], startLocation.coordinates[1]]
+          },
+          $maxDistance: maxDistance * 1000 // meters
+        }
+      }
+    }).exec();
+  }
+  
+
 module.exports = Driver;
 
