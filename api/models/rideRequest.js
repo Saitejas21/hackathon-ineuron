@@ -38,6 +38,16 @@ default: 'pending'
 
 rideRequestSchema.index({ startLocation: '2dsphere' });
 
+rideRequestSchema.statics.updateStatus = async function(id, status) {
+    const rideRequest = await this.findById(id);
+    if (!rideRequest) {
+      throw new Error('Ride request not found');
+    }
+    rideRequest.status = status;
+    await rideRequest.save();
+    return rideRequest;
+  }
+
 const RideRequest = mongoose.model('RideRequest', rideRequestSchema);
 
 module.exports = RideRequest;
