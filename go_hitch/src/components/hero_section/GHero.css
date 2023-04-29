@@ -1,0 +1,48 @@
+.top-inner{
+    height: 40vh;
+    background: url('https://cdn.blablacar.com/kairos/assets/images/carpool_only_small-09eb14eafab9352951e1..svg');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.address-select{
+    background-color: white;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    z-index: 999;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #888;
+}
+.input-box input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    color: #888;
+    font-size: 14px;
+}
+.input-box input::focus{
+    outline: none;
+}
+.two-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-search{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(22, 161, 225);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+.hero-section{
+    margin-bottom: 200px;
+}
